@@ -1,8 +1,8 @@
 Source: rufus-cloche
 Section: ruby
 Priority: optional
-Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
-Uploaders:  <>
+Maintainer: David Greaves <david@dgreaves.com>
+Uploaders: Islam Amer <islam.amer@nokia.com>
 DM-Upload-Allowed: yes
 Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.1.0)
 Standards-Version: 3.9.1
@@ -12,7 +12,7 @@ Homepage: http://github.com/jmettraux/rufus-cloche/
 
 Package: ruby-rufus-cloche
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby-rufus-json
 # rufus-json (>= 0.2.5), rake (>= 0), jeweler (>= 0)
 Description: a very stupid JSON hash store
  .\n A very stupid JSON hash store.
