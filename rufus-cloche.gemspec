@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-load 'lib/rufus/cloche/version.rb'
+require 'lib/rufus/cloche/version.rb'
 
 
 Gem::Specification.new do |s|
