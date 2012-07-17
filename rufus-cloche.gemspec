@@ -1,12 +1,12 @@
-# encoding: utf-8
-
-require 'lib/rufus/cloche/version.rb'
-
 
 Gem::Specification.new do |s|
 
   s.name = 'rufus-cloche'
-  s.version = Rufus::Cloche::VERSION
+
+  s.version = File.read(
+    File.expand_path('../lib/rufus/cloche/version.rb', __FILE__)
+  ).match(/ VERSION *= *['"]([^'"]+)/)[1]
+
   s.platform = Gem::Platform::RUBY
   s.authors = [ 'John Mettraux' ]
   s.email = [ 'jmettraux@gmail.com' ]
@@ -31,7 +31,7 @@ Strives to be process-safe and thread-safe.
     '*.gemspec', '*.txt', '*.rdoc', '*.md'
   ]
 
-  s.add_runtime_dependency 'rufus-json', '>= 0.2.5'
+  s.add_runtime_dependency 'rufus-json', '>= 1.0.1'
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'json'

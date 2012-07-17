@@ -1,5 +1,5 @@
 #--
-# Copyright (c) 2009-2011, John Mettraux, jmettraux@gmail.com
+# Copyright (c) 2009-2012, John Mettraux, jmettraux@gmail.com
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -30,7 +30,7 @@ module Rufus
   #
   class Cloche
 
-    VERSION = '0.1.21'
+    VERSION = '1.0.2'
   end
 end
 

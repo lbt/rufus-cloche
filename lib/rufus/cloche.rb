@@ -1,5 +1,5 @@
 #--
-# Copyright (c) 2009-2011, John Mettraux, jmettraux@gmail.com
+# Copyright (c) 2009-2012, John Mettraux, jmettraux@gmail.com
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -52,9 +52,6 @@ module Rufus
     # * :nolock : when set to true, no flock is used
     #
     # On the Windows platform, :nolock is set to true automatically.
-    #
-    # With JRuby 1.4.0, :nolock=true seems necessary on Ubuntu. While
-    # flock seems to work on MacOSX Snow Leopard.
     #
     def initialize (opts={})
 
@@ -304,7 +301,7 @@ module Rufus
             FileUtils.touch(fn) unless File.exist?(fn)
           end
 
-          file = File.new(fn) rescue nil
+          file = File.new(fn, 'r+') rescue nil
 
           return false if file.nil?
 
