@@ -14,8 +14,8 @@ XS-Ruby-Versions: all
 Package: ruby-rufus-cloche
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ${shlibs:Depends}, ${misc:Depends}, ruby1.8 | ruby-interpreter, ruby-rufus-json (>= 0.2.5)
-# rufus-json (>= 0.2.5, runtime), rake (>= 0, development), jeweler (>= 0, development)
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby1.8 | ruby-interpreter, ruby-rufus-json (>= 1.0.1)
+# rufus-json (>= 1.0.1, runtime), rake (>= 0, development), jeweler (>= 0, development)
 Description: a very stupid JSON hash store
  .
  A very stupid JSON hash store.

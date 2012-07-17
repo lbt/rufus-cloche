@@ -17,7 +17,7 @@
 
 # norootforbuild
 Name:           rubygem-rufus-cloche
-Version:        0.1.21
+Version:        1.0.2
 Release:        0
 %define mod_name rufus-cloche
 #
@@ -27,8 +27,8 @@ License:        GPLv2+ or Ruby
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildRequires:  rubygems_with_buildroot_patch
 %rubygems_requires
-BuildRequires:  rubygem-rufus-json >= 0.2.5
-Requires:       rubygem-rufus-json >= 0.2.5
+BuildRequires:  rubygem-rufus-json >= 1.0.1
+Requires:       rubygem-rufus-json >= 1.0.1
 #
 Url:            http://github.com/jmettraux/rufus-cloche/
 Source:         %{mod_name}-%{version}.gem
